@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPT-109 Assignment-1 | Answers</title>
+  <style>
+    :root { --navy:#142b4a; --blue:#245a91; --pale:#eef4fa; --ink:#243244; --muted:#5d6b7b; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; line-height:1.65; color:var(--ink); background:#f4f6f9; }
+    header { background:linear-gradient(135deg,var(--navy),var(--blue)); color:white; padding:38px 20px; text-align:center; }
+    header h1 { margin:0 0 8px; font-size:clamp(1.7rem,4vw,2.4rem); }
+    header p { margin:4px 0; }
+    main { max-width:1000px; margin:28px auto; padding:0 16px 36px; }
+    .intro, article { background:white; border-radius:12px; padding:22px 24px; margin-bottom:18px; box-shadow:0 3px 14px rgba(20,43,74,.07); }
+    .intro { border-left:5px solid var(--blue); }
+    h2 { color:var(--navy); margin-top:0; font-size:1.35rem; }
+    h3 { color:var(--blue); margin-bottom:6px; font-size:1.05rem; }
+    p { margin:8px 0; }
+    ul, ol { padding-left:24px; }
+    li { margin:5px 0; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; }
+    th, td { border:1px solid #d7e0ea; padding:10px; text-align:left; vertical-align:top; }
+    th { background:var(--pale); color:var(--navy); }
+    .note { background:var(--pale); border-radius:8px; padding:12px 14px; }
+    .diagram { display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:center; margin:14px 0; }
+    .diagram span { background:var(--pale); border:1px solid #c9d8e8; padding:10px 12px; border-radius:8px; text-align:center; }
+    .arrow { font-weight:bold; color:var(--blue); }
+    footer { text-align:center; color:var(--muted); padding:18px; font-size:.9rem; }
+    @media print { body { background:white; } header { background:var(--navy) !important; print-color-adjust:exact; } article,.intro { box-shadow:none; border:1px solid #ddd; break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>BPT-109: Assignment-1</h1>
+  <p><strong>Introduction to Computer &amp; Input/Output Devices</strong></p>
+  <p>Answers to Assessment Questions 1–8</p>
+</header>
+<main>
+  <section class="intro">
+    <h2>Assignment Overview</h2>
+    <p>This assignment covers the characteristics and generations of computers, computer block diagrams, scanning and card-reading devices, programming languages, input devices, output systems, biometric security, and accessible workstation design.</p>
+    <p><strong>Student Name:</strong> ____________________ &nbsp; <strong>Roll No.:</strong> ____________________</p>
+  </section>
+
+  <article>
+    <h2>Question 1. Characteristics of a Modern Digital Computer and the Five Generations</h2>
+    <h3>Four primary characteristics</h3>
+    <ol>
+      <li><strong>Speed:</strong> A computer processes millions or billions of operations per second.</li>
+      <li><strong>Accuracy:</strong> It produces accurate results when the input data and instructions are correct.</li>
+      <li><strong>Diligence and consistency:</strong> It can repeat tasks for long periods without fatigue or loss of consistency.</li>
+      <li><strong>Storage capacity:</strong> It can store large amounts of data and retrieve it quickly.</li>
+    </ol>
+    <h3>Technology associated with the five generations</h3>
+    <table>
+      <thead><tr><th>Generation</th><th>Main technology</th><th>Examples / features</th></tr></thead>
+      <tbody>
+        <tr><td>First</td><td>Vacuum tubes</td><td>Very large, hot, power-hungry machines; machine language.</td></tr>
+        <tr><td>Second</td><td>Transistors</td><td>Smaller, faster, and more reliable than vacuum-tube computers.</td></tr>
+        <tr><td>Third</td><td>Integrated circuits (ICs)</td><td>Greater reliability and operating-system development.</td></tr>
+        <tr><td>Fourth</td><td>Microprocessors using VLSI technology</td><td>Personal computers, laptops, and widespread networking.</td></tr>
+        <tr><td>Fifth</td><td>AI-oriented systems, parallel processing, and advanced semiconductor technology</td><td>Natural-language processing, expert systems, and machine learning applications.</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <article>
+    <h2>Question 2. Block Diagram and Working of a Computer</h2>
+    <p>A computer system accepts data and instructions, processes them according to a program, stores information when required, and presents the results to the user.</p>
+    <div class="diagram" aria-label="Computer block diagram">
+      <span><strong>Input Unit</strong><br>Keyboard, mouse</span><b class="arrow">→</b>
+      <span><strong>CPU</strong><br>Control Unit + ALU + Registers</span><b class="arrow">↔</b>
+      <span><strong>Memory</strong><br>RAM / ROM</span>
+      <b class="arrow">→</b><span><strong>Output Unit</strong><br>Monitor, printer</span>
+    </div>
+    <h3>Main units and their functions</h3>
+    <ul>
+      <li><strong>Input unit:</strong> Accepts data and instructions and converts them into a form the computer can process.</li>
+      <li><strong>CPU (Central Processing Unit):</strong> The main processing component. The <em>Control Unit (CU)</em> coordinates operations; the <em>Arithmetic Logic Unit (ALU)</em> performs arithmetic and logical comparisons; registers hold small amounts of data temporarily.</li>
+      <li><strong>Memory unit:</strong> RAM holds programs and data currently in use; ROM stores essential instructions. Secondary storage, such as an SSD or hard drive, retains data long-term.</li>
+      <li><strong>Output unit:</strong> Presents processed information through devices such as a monitor, printer, or speakers.</li>
+      <li><strong>System buses:</strong> Data, address, and control buses carry information, identify locations, and coordinate operations between components.</li>
+    </ul>
+    <p><strong>Flow:</strong> Input → memory/CPU processing → results stored if needed → output. Control signals from the CU coordinate the fetch–decode–execute cycle, while data moves between the CPU, memory, and input/output interfaces.</p>
+  </article>
+
+  <article>
+    <h2>Question 3. Use of Optical Data Scanning and Electronic Card Readers on Campus</h2>
+    <p>Optical scanning devices read printed marks or patterns, while electronic card readers obtain information from a card or tag. A campus can combine them to automate attendance and library services.</p>
+    <h3>Optical scanning devices</h3>
+    <ul>
+      <li><strong>Barcode scanner:</strong> Reads a printed barcode on a student ID or library book. The system looks up the linked student or item record.</li>
+      <li><strong>OMR (Optical Mark Recognition):</strong> Detects filled bubbles or marked boxes on forms. It can process examination answer sheets, surveys, or paper attendance forms.</li>
+      <li><strong>OCR (Optical Character Recognition):</strong> Converts printed text in scanned documents into editable or searchable text.</li>
+    </ul>
+    <h3>Electronic card readers</h3>
+    <ul>
+      <li><strong>RFID reader:</strong> Reads data from a radio-frequency tag or card without requiring direct contact.</li>
+      <li><strong>Smart-card reader:</strong> Reads information from a chip-based card, often through contact or contactless communication.</li>
+      <li><strong>Magnetic-stripe reader:</strong> Reads data encoded on a magnetic stripe; it is generally less secure than modern chip-based systems.</li>
+    </ul>
+    <h3>Campus deployment</h3>
+    <ol>
+      <li>Issue each student a unique ID card or RFID-enabled card.</li>
+      <li>Place readers at approved entry points and connect them to the campus information system.</li>
+      <li>Record time-stamped attendance events and allow authorized staff to review reports.</li>
+      <li>Use barcode or RFID scanning at the library desk to check books in and out and update the catalogue automatically.</li>
+      <li>Protect personal data with access controls, encryption where appropriate, audit logs, and a manual correction process.</li>
+    </ol>
+    <p class="note"><strong>Benefits:</strong> Faster processing, fewer manual entry errors, easier reporting, and improved tracking. Systems should include privacy safeguards and a backup method for reader or network failures.</p>
+  </article>
+
+  <article>
+    <h2>Question 4. Low-Level and High-Level Programming Languages</h2>
+    <p>Low-level languages are closely related to the computer's hardware. High-level languages use more human-readable statements and usually provide greater abstraction from hardware details.</p>
+    <table>
+      <thead><tr><th>Basis</th><th>Low-level: Machine / Assembly</th><th>High-level languages</th></tr></thead>
+      <tbody>
+        <tr><td>Form</td><td>Binary instructions in machine code; mnemonic instructions in assembly.</td><td>Readable statements and structured constructs.</td></tr>
+        <tr><td>Execution</td><td>Machine code runs directly on the processor; assembly is translated by an assembler.</td><td>Usually translated by a compiler or executed through an interpreter/runtime.</td></tr>
+        <tr><td>Speed</td><td>Can be highly efficient when carefully optimized, but performance depends on the code and hardware.</td><td>Can also be very fast; performance depends on language, compiler/runtime, and implementation.</td></tr>
+        <tr><td>Hardware dependence</td><td>Machine-specific and strongly tied to processor architecture.</td><td>Generally more portable across systems with suitable compilers or runtimes.</td></tr>
+        <tr><td>Programming effort</td><td>More difficult to write, debug, and maintain for most applications.</td><td>Usually easier to develop, test, read, and maintain.</td></tr>
+        <tr><td>Examples</td><td>Machine code, x86 or ARM assembly.</td><td>C, C++, Java, Python, JavaScript.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Conclusion:</strong> Low-level languages are useful for hardware control, embedded systems, and performance-critical routines. High-level languages are preferred for most application development because they improve productivity and portability.</p>
+  </article>
+
+  <article>
+    <h2>Question 5. Mouse and Trackball Compared with Graphics Digitizers / Drawing Tablets</h2>
+    <p>Point-and-draw devices control a pointer or cursor, but they differ in how movement is detected and how accurately they support drawing.</p>
+    <table>
+      <thead><tr><th>Feature</th><th>Mouse</th><th>Trackball</th><th>Graphics tablet / digitizer</th></tr></thead>
+      <tbody>
+        <tr><td>Operation</td><td>The user moves the device across a surface.</td><td>The device stays in place while the user rotates a ball.</td><td>A stylus moves over a sensor surface; position is mapped to the screen or design.</td></tr>
+        <tr><td>Coordinate tracking</td><td>Usually relative movement of the pointer.</td><td>Relative pointer movement controlled by the ball.</td><td>Often supports precise absolute positioning and stylus tracking.</td></tr>
+        <tr><td>Precision</td><td>Good for general navigation and office tasks.</td><td>Good cursor control in limited desk space.</td><td>High precision for tracing, illustration, and technical drawing.</td></tr>
+        <tr><td>Pressure sensitivity</td><td>Not normally available.</td><td>Not normally available.</td><td>Many tablets detect stylus pressure and sometimes tilt.</td></tr>
+        <tr><td>Applications</td><td>Everyday computing, browsing, and general CAD navigation.</td><td>Workstations with limited space or users who prefer stationary devices.</td><td>CAD tracing, digital art, handwriting, and design annotation.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Summary:</strong> A mouse is versatile and inexpensive; a trackball saves desk space; a graphics tablet provides more natural and precise stylus input for detailed CAD tracing and digital artwork. The best choice depends on task requirements and user preference.</p>
+  </article>
+
+  <article>
+    <h2>Question 6. Plotter or Monitor and Large-Format Printer for Civil Engineering Drawings</h2>
+    <p>A drum/flatbed plotter draws vector lines with a pen or plotting mechanism. A high-resolution monitor displays drawings for review, while a large-format printer produces paper copies. They serve different purposes, so the most suitable choice depends on whether the priority is final hard-copy output or interactive review.</p>
+    <table>
+      <thead><tr><th>Criterion</th><th>Drum / flatbed plotter</th><th>High-resolution monitor + large-format printer</th></tr></thead>
+      <tbody>
+        <tr><td>Line quality and resolution</td><td>Can produce precise vector lines; traditional pen plotters may be slower and limited by pen and media.</td><td>Monitor provides detailed on-screen review; modern large-format printers can produce fine lines and text at high resolution.</td></tr>
+        <tr><td>Scalability</td><td>Supports large drawings within the machine's bed or roll width.</td><td>Digital drawings can be zoomed and revised; printer supports specified paper widths and sizes.</td></tr>
+        <tr><td>Workflow</td><td>Primarily a dedicated plotting device.</td><td>Supports editing, collaboration, digital checking, and hard-copy printing.</td></tr>
+        <tr><td>Long-term cost</td><td>Specialized hardware and maintenance may be costly; traditional plotters can be slow.</td><td>Higher initial cost for a quality display and printer, plus ink/toner, media, and maintenance.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Recommendation:</strong> For a modern civil engineering office, a high-resolution monitor paired with a reliable large-format printer is generally more versatile because it supports digital review, revisions, and final scaled prints. A specialized plotter may be appropriate for particular vector-output needs. Before printing, verify scale, line weights, page size, and legibility. Total cost should be compared using expected print volume and consumables.</p>
+  </article>
+
+  <article>
+    <h2>Question 7. Reliability and Security of Facial Recognition versus Voice Recognition</h2>
+    <p>Facial recognition identifies a person from facial features; voice recognition uses characteristics of a person's voice. Both can be useful, but neither is perfectly reliable or immune to spoofing.</p>
+    <table>
+      <thead><tr><th>Factor</th><th>Facial recognition</th><th>Voice recognition</th></tr></thead>
+      <tbody>
+        <tr><td>Environmental effects</td><td>Lighting, camera angle, masks, image quality, and changes in appearance can affect results.</td><td>Background noise, microphone quality, illness, stress, and changes in speaking style can affect results.</td></tr>
+        <tr><td>Spoofing risk</td><td>Photos, videos, masks, or synthetic imagery may be used against weak systems.</td><td>Recordings, replay attacks, or AI-generated voice imitations may attack weak systems.</td></tr>
+        <tr><td>Public environment</td><td>Can operate at a distance, raising consent and surveillance concerns.</td><td>May be affected by noise and can capture conversations unintentionally.</td></tr>
+        <tr><td>Safeguards</td><td>Liveness detection, secure templates, access controls, testing, and human review.</td><td>Anti-replay checks, liveness checks, secure templates, noise handling, and human review.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Conclusion:</strong> Reliability depends on implementation and operating conditions, so neither method is universally superior. For high-security public access, use biometric checks as one part of multi-factor authentication—for example, combined with an access card or PIN—and provide a non-biometric alternative. Minimize stored data, obtain appropriate consent, restrict access, and regularly test for false acceptance, false rejection, and demographic performance differences.</p>
+  </article>
+
+  <article>
+    <h2>Question 8. Design an Accessible, Hands-Free Computer Workstation</h2>
+    <p>The workstation should enable a user with a visual or physical impairment to operate a computer safely and independently. It should combine accessible input methods with suitable output and adjustable physical equipment.</p>
+    <h3>Input devices</h3>
+    <ul>
+      <li><strong>Voice recognition:</strong> Allows the user to dictate text, launch applications, navigate menus, and issue commands using a microphone and speech-recognition software.</li>
+      <li><strong>Alternative keyboard:</strong> A high-contrast, large-key, one-handed, or on-screen keyboard can help users with limited dexterity.</li>
+      <li><strong>Switch access:</strong> A single switch, head switch, or other adaptive controller can operate scanning menus for users who cannot use a standard keyboard or mouse.</li>
+      <li><strong>Eye tracking or head pointer:</strong> Can provide pointer control when hand movement is limited, where suitable and comfortable.</li>
+    </ul>
+    <h3>Output devices and accessibility software</h3>
+    <ul>
+      <li><strong>Screen reader:</strong> Reads interface text, buttons, documents, and alerts aloud.</li>
+      <li><strong>Refreshable braille display:</strong> Presents digital text as tactile braille for users who read braille.</li>
+      <li><strong>Voice response / speech synthesizer:</strong> Provides spoken confirmation, notifications, and system feedback.</li>
+      <li><strong>Magnification and high contrast:</strong> Enlarges text and improves visibility for users with low vision.</li>
+      <li><strong>Captions and visual alerts:</strong> Support users who are deaf or hard of hearing.</li>
+    </ul>
+    <h3>Workstation setup and integration</h3>
+    <ol>
+      <li>Provide an adjustable desk, supportive chair, suitable monitor position, and accessible placement of the microphone and switches.</li>
+      <li>Enable operating-system accessibility features, voice control, and a screen reader or magnifier according to the user's needs.</li>
+      <li>Configure keyboard shortcuts and voice commands for common tasks, and ensure essential actions have clear spoken or tactile feedback.</li>
+      <li>Test the complete workflow—login, document creation, saving, communication, and error recovery—with the intended user.</li>
+      <li>Protect privacy when using microphones and speech services; obtain consent before cloud processing and provide a manual or alternative access method.</li>
+    </ol>
+    <p class="note"><strong>Expected outcome:</strong> A flexible workstation that reduces dependence on conventional mouse-and-keyboard use and provides accessible feedback. The final combination should be selected with the user, because accessibility needs and comfort differ from person to person.</p>
+  </article>
+</main>
+<footer>
+  BPT-109 Assignment-1 · Introduction to Computer and Input/Output Devices
+</footer>
+</body>
+</html>
